@@ -1,3 +1,2 @@
-a = [1, 2, 3]
-b = 2
-print(b in range(len(a)))
+print('  '.join(['[]' * 3]))
+print(['[]' * 3])

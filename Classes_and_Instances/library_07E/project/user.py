@@ -1,4 +1,4 @@
-# from Attributes_and_Methods.library_07E.project.library import Library
+# from Classes_and_Instances.library_07E.project.library import Library
 
 
 class User:
