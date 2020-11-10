@@ -21,8 +21,11 @@ class Group:
     def __len__(self):
         return len(self.people)
 
-    def __getitem__(self, item):
-        return f'Person {self.people.index(self.people[item])}: {self.people[item]}'
+    def __getitem__(self, index):
+        # return f'Person {self.people.index(self.people[item])}: {self.people[item]}'
+        return f'Person {index}: {self.people[index]}'
+        # The index can be implemented as a class attribute in the Person class
+        # which will lead to changes to both __repr__ methods
 
     def __repr__(self):
         return f'Group {self.name} with members {", ".join(p.name + " " + p.surname for p in self.people)}'
