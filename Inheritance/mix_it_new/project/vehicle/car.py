@@ -31,3 +31,10 @@ class Car(Vehicle):
             return fn_value
         self.__fuel += liters
         return self.__fuel
+
+# От колежка:
+# def refuel(self, liters):
+# available = self.get_capacity(self.fuel_tank, self.__fuel)
+# if available >= liters:
+# self.__fuel += liters
+# return self.__fuel
