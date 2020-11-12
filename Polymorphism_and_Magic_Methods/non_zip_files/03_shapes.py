@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 from math import pi
 
 
-class Shapes(ABC):
+class Shape(ABC):
     @abstractmethod
     def calculate_area(self):
         pass
@@ -12,7 +12,7 @@ class Shapes(ABC):
         pass
 
 
-class Circle(Shapes):
+class Circle(Shape):
     def __init__(self, radius):
         self.__radius = radius
 
@@ -23,7 +23,7 @@ class Circle(Shapes):
         return 2 * pi * self.__radius
 
 
-class Rectangle(Shapes):
+class Rectangle(Shape):
     def __init__(self, height, width):
         self.__height = height
         self.__width = width
