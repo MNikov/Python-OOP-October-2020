@@ -25,4 +25,3 @@ class Library:
                    "it should be different than the username used so far!"
         user.username = new_username
         return f"Username successfully changed to: {new_username} for userid: {user_id}"
-
